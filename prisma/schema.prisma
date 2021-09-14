@@ -8,6 +8,7 @@ datasource db {
 }
 
 model store {
-  url    String   @id @unique @db.VarChar(100)
-  enable Boolean? @default(true)
+  url         String   @id @unique @db.VarChar(100)
+  enable      Boolean? @default(true)
+  accessToken String?  @db.VarChar(100)
 }

@@ -8,10 +8,10 @@ const Index = () => (
   </Page>
 );
 
-export async function getServerSideProps({req, params}) {
-  const variantId = params.id;
+export async function getServerSideProps({req, res, params}) {
+
   return {
-    props: {}, // will be passed to the page component as props
+    props: {}, // will be passed to the page comsponent as props
   }
 }
 

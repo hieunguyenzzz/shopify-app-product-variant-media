@@ -79,6 +79,8 @@ app.prepare().then(async () => {
   );
 
   const handleRequest = async (ctx) => {
+
+    // const {shop, accessToken, scope} = ctx.state.shopify;
     await handle(ctx.req, ctx.res);
     ctx.respond = false;
     ctx.res.statusCode = 200;
